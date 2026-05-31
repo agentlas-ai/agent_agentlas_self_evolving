@@ -46,3 +46,11 @@ posting authority stay locked.
 Reason: the user's hierarchy is a strong example of modular evolution. The
 evolver does not rewrite the whole agent; it proposes scoped updates to voice,
 runtime, cadence, or promotion rules.
+
+## 2026-05-31: Promote The Work Into A Paper Artifact
+
+The repo now treats `PAPER.md` as the canonical research artifact. Existing
+README, docs, skills, and templates support the paper rather than replacing it.
+
+Reason: the project is meant to be shared as a public research repo, so the
+argument needs a single paper-shaped entry point before being posted publicly.

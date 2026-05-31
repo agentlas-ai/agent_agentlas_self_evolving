@@ -36,3 +36,12 @@
 - Classified the pattern as a high-fit self-evolution case when limited to an
   owned account, approved posting boundary, safe browser operation, and
   externally evaluated voice/runtime feedback.
+
+## 2026-05-31: Paper Draft
+
+- Consolidated the research into `PAPER.md`, a paper-style argument with
+  abstract, related work, definitions, framework, case studies, evaluation
+  protocol, limitations, conclusion, and references.
+- Made the paper the first artifact linked from the README.
+- Kept the paper conceptual and architectural rather than claiming empirical
+  benchmark results that have not been run.

@@ -69,3 +69,11 @@ This is public memory for `agent_agentlas_self_evolving`.
   failure recovery, hourly cadence, and promotion criteria.
 - Locked boundaries: credentials, anti-abuse bypass, deceptive engagement,
   cross-account memory, and unapproved live posting authority.
+
+### 2026-05-31: Paper Artifact
+
+- `PAPER.md` is the canonical research paper entry point.
+- The paper argues that self-evolution is a governance problem over bounded
+  artifacts rather than a universal agent property.
+- The README should link the paper before the shorter abstract and operational
+  maps.

@@ -18,6 +18,11 @@
   should be blocked.
 </p>
 
+## Paper
+
+Read the full paper: [Self-Evolution Is Not A Universal Good: A Governance
+Framework For Bounded Agent Adaptation](PAPER.md).
+
 ## Abstract
 
 Self-evolution is not automatically good. It is useful when an agent repeatedly
@@ -187,6 +192,7 @@ The design borrows from several adjacent lines of work:
 ## Repository Map
 
 - [agent.md](agent.md): reusable Evolution Governor agent contract.
+- [PAPER.md](PAPER.md): paper-style research argument and evaluation protocol.
 - [ARCHITECTURE.md](ARCHITECTURE.md): system architecture and decision flow.
 - [AGENTS.md](AGENTS.md): Codex operating rules for this repo.
 - [CLAUDE.md](CLAUDE.md): Claude Code guide for this repo.
