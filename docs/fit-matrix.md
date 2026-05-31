@@ -21,6 +21,7 @@ Use this matrix to decide whether self-evolution is likely to help.
 | Browser agent repeatedly operating one SaaS dashboard | `EVOLVE` | Stable UI, observable failures, reusable selectors, bounded account scope |
 | Presentation agent learning one user's deck style | `EVOLVE` | Strong recurring preference signal and inspectable outputs |
 | SNS operator for one brand account | `CONSTRAIN` | Useful repeated loop, but must preserve account, policy, and platform boundaries |
+| Threads agent with separate voice/runtime/operator/evolver skills | `CONSTRAIN` moving toward `EVOLVE` | Good modular boundary; learned references may evolve faster than live posting authority |
 | Generic assistant across all user tasks | `DO_NOT_EVOLVE` | Mixed domains create memory conflict and false continuity |
 | Medical triage agent changing its own advice policy | `HUMAN_REVIEW` | High-stakes and regulated; evolution may help only under strict oversight |
 | One-off market thesis brainstorm | `DO_NOT_EVOLVE` | No stable loop and high risk of canonizing speculation |
@@ -42,6 +43,9 @@ Return `DO_NOT_EVOLVE` or `HUMAN_REVIEW` if any blocker is present:
 - The evaluator is the same agent trying to prove that it improved.
 - For trading: the evaluation omits transaction costs, slippage, market impact,
   drawdown, turnover, and number-of-trials accounting.
+- For SNS/Threads: the evolution proposes credential handling, rate-limit
+  evasion, anti-abuse bypass, deceptive engagement, or posting outside the
+  approved account boundary.
 
 ## Narrowing Moves
 

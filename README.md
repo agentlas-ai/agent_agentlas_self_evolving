@@ -71,6 +71,7 @@ update at all.
 |---|---|---|
 | Playwright-style browser operator for one site | Stable selectors, repeated flows, observable failures | selectors, retries, navigation recipes, account preferences |
 | Social/SNS operations for one account and campaign type | Repeated platform patterns and measurable post outcomes | posting checklist, tone memory, compliance guardrails, timing heuristics |
+| Threads account operator with separated skills | Voice and runtime can improve independently under one account boundary | learned voice, learned runtime, hourly cadence, skill promotion rules |
 | Presentation agent for one user's style | Strong recurring preference signal and inspectable output | layout rules, citation style, title density, visual constraints |
 | Data pipeline repair agent | Deterministic logs, tests, schema drift, run history | runbook skills, alert triage, schema checks |
 | Codebase-specific maintenance agent | Stable repo conventions and executable tests | local conventions, patch templates, validation matrix |
@@ -193,6 +194,8 @@ The design borrows from several adjacent lines of work:
 - [docs/literature-map.md](docs/literature-map.md): source-backed research map.
 - [docs/fit-matrix.md](docs/fit-matrix.md): practical domain fit matrix.
 - [docs/evaluation.md](docs/evaluation.md): metrics and experiment design.
+- [docs/threads-agent-example.md](docs/threads-agent-example.md): Threads/SNS
+  agent hierarchy example with learned voice and browser-runtime references.
 - [docs/trading-agent-evolution.md](docs/trading-agent-evolution.md): trading
   agent addendum on profit, random walks, natural selection, and overfitting.
 - [docs/research-log.md](docs/research-log.md): dated research notes.

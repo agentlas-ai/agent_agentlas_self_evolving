@@ -25,3 +25,14 @@
 - Added the "philosophical phenotype" hypothesis: the more useful evolution
   target may be hypothesis discipline, falsification behavior, patience,
   abstention, and risk governance rather than indicator parameters.
+
+## 2026-05-31: Threads Agent Example
+
+- Added a concrete Threads/SNS agent hierarchy based on the user's example:
+  `Appbridge Threads Agent` as CEO, with voice/copy, browser runtime, hourly
+  operator, and skill evolver capabilities.
+- Treated `Learned Voice` and `Learned Runtime` as reference-memory artifacts,
+  not standalone agents. That keeps learned behavior scoped and reviewable.
+- Classified the pattern as a high-fit self-evolution case when limited to an
+  owned account, approved posting boundary, safe browser operation, and
+  externally evaluated voice/runtime feedback.

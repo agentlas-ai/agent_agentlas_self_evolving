@@ -35,3 +35,14 @@ instructions.
 Reason: trading-agent self-evolution is a useful stress case for the repo's
 core thesis, but live financial decisions are high-stakes and can be harmed by
 reward hacking, overfitting, and permission expansion.
+
+## 2026-05-31: Add Threads Agent Example
+
+The repo now includes a concrete Threads/SNS example because it demonstrates a
+good self-evolution boundary: copy voice and browser runtime can learn through
+separate reference memories while account permissions, safety rules, and live
+posting authority stay locked.
+
+Reason: the user's hierarchy is a strong example of modular evolution. The
+evolver does not rewrite the whole agent; it proposes scoped updates to voice,
+runtime, cadence, or promotion rules.

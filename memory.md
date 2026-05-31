@@ -58,3 +58,14 @@ This is public memory for `agent_agentlas_self_evolving`.
   quarantine.
 - The repo treats live-capital risk limits, leverage, broker permissions, and
   capital allocation as human-review boundaries.
+
+### 2026-05-31: Threads Agent Example
+
+- The Threads example uses a CEO agent with four capabilities: voice/copy,
+  browser runtime, hourly operation, and skill evolution.
+- `Learned Voice` and `Learned Runtime` are reference-memory artifacts attached
+  to skills, not autonomous roles.
+- Good evolution targets: voice examples, copy rules, runtime selectors,
+  failure recovery, hourly cadence, and promotion criteria.
+- Locked boundaries: credentials, anti-abuse bypass, deceptive engagement,
+  cross-account memory, and unapproved live posting authority.

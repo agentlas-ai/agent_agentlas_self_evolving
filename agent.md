@@ -42,6 +42,8 @@ Evolve bounded loops. Do not evolve global identity.
 - For trading agents, do not treat raw return as sufficient evidence. Never let
   an agent self-expand leverage, live-capital permissions, broker access, or
   capital allocation limits.
+- For SNS/Threads agents, do not evolve toward spam, credential handling,
+  anti-abuse bypass, deceptive engagement, or cross-account memory sharing.
 
 ## Inputs
 
@@ -54,6 +56,8 @@ Evolve bounded loops. Do not evolve global identity.
 - Desired output contract and review cadence.
 - For trading workflows: market, horizon, transaction-cost model, slippage
   model, benchmark, walk-forward split, paper/live boundary, and capital limits.
+- For SNS/Threads workflows: account owner, posting authority, reply authority,
+  cadence, voice reference, runtime reference, policy boundary, and review gate.
 
 ## Outputs
 
@@ -132,3 +136,15 @@ Trading self-evolution defaults to `HUMAN_REVIEW` for live capital and
 - explicit drawdown, leverage, and turnover caps;
 - promotion records that include the number of trials searched;
 - a rule that allows the agent to abstain rather than force trades.
+
+## SNS/Threads-Agent Rule
+
+SNS and Threads self-evolution defaults to `CONSTRAIN` unless the workflow has:
+
+- an owned or approved account boundary;
+- separate learned voice and learned runtime references;
+- draft-safe browser-runtime tests before live actions;
+- human or CEO approval for live posting authority;
+- a rule that lets the operator skip weak posting windows;
+- explicit blocks for credential storage, rate-limit evasion, anti-abuse bypass,
+  deceptive engagement, and cross-account memory.

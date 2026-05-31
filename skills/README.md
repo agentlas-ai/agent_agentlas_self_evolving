@@ -10,3 +10,5 @@ Reusable operating skills for the Evolution Governor:
   promotion, blocking, or escalation record.
 - [trading-evolution-governance](trading-evolution-governance/SKILL.md): review
   trading-agent evolution without mistaking backtest winners for durable edge.
+- [threads-agent-evolution](threads-agent-evolution/SKILL.md): govern a
+  Threads/SNS operator whose learned voice and browser runtime evolve separately.

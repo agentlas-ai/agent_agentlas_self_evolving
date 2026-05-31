@@ -74,3 +74,22 @@ Use these gates before any trading evolution is promoted:
 The expected negative-control result is important: in a true random-walk
 environment, a large population should not discover a durable edge. If it does,
 assume leakage, overfitting, or a flawed simulator until proven otherwise.
+
+## Threads/SNS-Specific Evaluation
+
+Threads-style social agents should evaluate both content quality and operational
+safety.
+
+| Gate | Purpose |
+|---|---|
+| Voice holdout | Check new drafts against older approved examples that were not used for learning. |
+| Brand drift score | Detect when the agent becomes too promotional, too generic, or off-voice. |
+| Runtime replay | Test browser recipes against harmless navigation or draft-only flows before live use. |
+| Failure recovery | Verify that popups, login expiry, empty states, and network errors produce safe stops. |
+| Rate/cadence guard | Prevent the hourly operator from becoming spammy or repetitive. |
+| Human approval sample | Keep a review sample of posts, replies, and skill updates before promotion. |
+| Policy boundary review | Block credential capture, anti-abuse bypass, deceptive engagement, and cross-account leakage. |
+
+The healthy result is not maximum posting volume. The healthy result is stable
+voice, low correction rate, safe browser operation, and a willingness to skip an
+hour when the queue has no good post.
