@@ -25,3 +25,13 @@ The repo uses public-safe examples such as browser automation, presentation
 generation, SNS operations, data pipeline repair, and codebase maintenance. It
 does not include private project logs, local file paths, credentials, or account
 details.
+
+## 2026-05-31: Add Trading-Agent Research Without Trading Advice
+
+The trading section is framed as agent-governance research, not investment
+advice. It does not name tickers, recommend strategies, or provide live-trading
+instructions.
+
+Reason: trading-agent self-evolution is a useful stress case for the repo's
+core thesis, but live financial decisions are high-stakes and can be harmed by
+reward hacking, overfitting, and permission expansion.

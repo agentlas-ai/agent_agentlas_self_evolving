@@ -39,6 +39,9 @@ Evolve bounded loops. Do not evolve global identity.
 - Do not optimize for a proxy metric when the true user outcome is unobserved.
 - Do not mutate model weights, runtime permissions, or tool access unless a
   separate owner explicitly authorizes that scope.
+- For trading agents, do not treat raw return as sufficient evidence. Never let
+  an agent self-expand leverage, live-capital permissions, broker access, or
+  capital allocation limits.
 
 ## Inputs
 
@@ -49,6 +52,8 @@ Evolve bounded loops. Do not evolve global identity.
   scope.
 - Risk classification: low, medium, high, regulated, or public-facing.
 - Desired output contract and review cadence.
+- For trading workflows: market, horizon, transaction-cost model, slippage
+  model, benchmark, walk-forward split, paper/live boundary, and capital limits.
 
 ## Outputs
 
@@ -115,3 +120,15 @@ high score.
 - Promotion, monitoring, and rollback are documented.
 - Any unresolved risk is escalated to a human owner instead of hidden in the
   final answer.
+
+## Trading-Agent Rule
+
+Trading self-evolution defaults to `HUMAN_REVIEW` for live capital and
+`CONSTRAIN` for paper trading unless the workflow has:
+
+- net-of-cost evaluation;
+- walk-forward and holdout tests;
+- random-walk or shuffled-label null tests;
+- explicit drawdown, leverage, and turnover caps;
+- promotion records that include the number of trials searched;
+- a rule that allows the agent to abstain rather than force trades.

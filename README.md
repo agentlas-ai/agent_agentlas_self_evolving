@@ -74,6 +74,7 @@ update at all.
 | Presentation agent for one user's style | Strong recurring preference signal and inspectable output | layout rules, citation style, title density, visual constraints |
 | Data pipeline repair agent | Deterministic logs, tests, schema drift, run history | runbook skills, alert triage, schema checks |
 | Codebase-specific maintenance agent | Stable repo conventions and executable tests | local conventions, patch templates, validation matrix |
+| Trading research agent in paper/live-sim mode | Repeated market decision loop with measurable outcomes, but high overfit risk | hypothesis discipline, risk constraints, abstention rules, evaluation protocol |
 
 ## Where Self-Evolution Hurts
 
@@ -84,6 +85,39 @@ update at all.
 | High-stakes legal, medical, financial decisions | Reward hacking, privacy risk, stale policy | human review and source-grounded checklists |
 | Tasks with no reliable evaluator | Self-praise loop and drift | external verifier first, then consider evolution |
 | Cross-client or cross-account operations | Confidentiality leakage | tenant-scoped memory and permission isolation |
+| Live-capital trading agent changing its own leverage or broker permissions | Ruin risk and objective gaming | governance lock, paper trading, human approval |
+
+## Trading-Agent Addendum
+
+A stock-trading agent is a special case because the obvious objective function,
+"make more money," is too easy to game. Raw return rewards leverage, hidden tail
+risk, excessive turnover, and lucky backtests. A trading agent's fitness should
+therefore treat profit as the final ecological signal, not the only training
+objective. This section is agent-governance research, not investment advice.
+
+Trading evolution should optimize a governed survival bundle:
+
+```text
+fitness =
+  net risk-adjusted return
+- drawdown and ruin risk
+- turnover, fees, slippage, and market impact
+- overfit and data-snooping penalty
+- leverage and concentration penalty
++ regime robustness
++ abstention quality
++ evidence quality
+```
+
+The most promising target may not be a numeric parameter. In random-walk-like
+markets, evolving more moving-average windows or more entry thresholds mainly
+selects historical luck. A more useful evolution target is the agent's research
+and survival phenotype: how it forms hypotheses, rejects weak edges, abstains
+when no edge exists, sizes risk, handles regime shifts, and refuses to promote a
+strategy without out-of-sample evidence.
+
+See [docs/trading-agent-evolution.md](docs/trading-agent-evolution.md) for the
+full research note.
 
 ## Agent Contract
 
@@ -159,6 +193,8 @@ The design borrows from several adjacent lines of work:
 - [docs/literature-map.md](docs/literature-map.md): source-backed research map.
 - [docs/fit-matrix.md](docs/fit-matrix.md): practical domain fit matrix.
 - [docs/evaluation.md](docs/evaluation.md): metrics and experiment design.
+- [docs/trading-agent-evolution.md](docs/trading-agent-evolution.md): trading
+  agent addendum on profit, random walks, natural selection, and overfitting.
 - [docs/research-log.md](docs/research-log.md): dated research notes.
 - [templates/evolution-decision-record.md](templates/evolution-decision-record.md):
   promotion/blocking record template.

@@ -88,3 +88,42 @@ diversity, rollback, and stability.
 reward hacking, scalable supervision, safe exploration, and distribution shift
 as practical accident-risk categories. Self-evolution introduces optimization
 pressure, so these risks should be reviewed before promotion.
+
+## Trading, Random Walks, And Evolution
+
+[The Adaptive Markets Hypothesis](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=602222)
+applies competition, adaptation, and natural selection to financial
+interactions. It is the strongest research anchor for thinking about trading
+agents as ecological competitors rather than isolated predictors.
+
+[Data-Snooping, Technical Trading Rule Performance, and the Bootstrap](https://ideas.repec.org/a/bla/jfinan/v54y1999i5p1647-1691.html)
+uses White's Reality Check to evaluate technical trading rules while accounting
+for the universe of rules searched. This supports the repo's warning that a
+large population of trading agents can manufacture false discoveries unless the
+search process itself is included in evaluation.
+
+[The Deflated Sharpe Ratio](https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf)
+argues that selection bias under multiple testing and non-normal returns inflate
+strategy performance. Trading-agent evolution should therefore record how many
+variants were tried, not only the best Sharpe that survived.
+
+[Using Genetic Algorithms to Find Technical Trading Rules](https://www.sciencedirect.com/science/article/pii/S0304405X9800052X)
+found that GA-learned S&P 500 technical rules did not earn consistent excess
+returns over buy-and-hold after transaction costs in out-of-sample periods. This
+is a caution against treating genetic search as an alpha machine.
+
+[Deep Reinforcement Learning in Quantitative Algorithmic Trading: A Review](https://arxiv.org/abs/2106.00123)
+notes that many DRL trading studies remain proof-of-concept, often unrealistic,
+and lack real-time trading validation. This supports `CONSTRAIN` rather than
+unrestricted `EVOLVE` for trading agents.
+
+[Realistic Market Impact Modeling for Reinforcement Learning Trading Environments](https://arxiv.org/abs/2603.29086)
+shows that transaction-cost and market-impact assumptions can materially change
+algorithm ranking and trading behavior. This makes cost modeling part of the
+evolution boundary, not an implementation detail.
+
+[No Free Lunch Theorems for Optimization](https://www.cs.ubc.ca/~hutter/earg/papers07/00585893.pdf)
+formalizes limits of general-purpose black-box optimization. In this repo's
+terms: natural selection over many agents helps only if the market environment
+has exploitable structure and the selection test measures that structure rather
+than historical luck.

@@ -54,3 +54,23 @@ If an evolved change causes a regression, write a failure review:
 - Was the evaluator too weak, too narrow, or gameable?
 - Was the memory boundary wrong?
 - Should the rule be reverted, narrowed, expired, or escalated?
+
+## Trading-Specific Evaluation
+
+Trading agents need stricter evaluation because backtests are easy to overfit.
+Use these gates before any trading evolution is promoted:
+
+| Gate | Purpose |
+|---|---|
+| Net-of-cost test | Include fees, spread, slippage, borrow/funding, and market impact. |
+| Walk-forward split | Prevent the agent from selecting parameters on the same period it reports. |
+| Holdout markets | Test related but unseen symbols, sectors, or regimes. |
+| Random-walk null | Compare against shuffled returns or synthetic random-walk series. |
+| Deflated Sharpe / multiple-testing penalty | Account for the number of strategies or agents searched. |
+| Drawdown and ruin test | Penalize strategies that maximize return by hiding tail risk. |
+| Abstention score | Reward the agent for not trading when no edge is present. |
+| Paper-trading quarantine | Require forward results before live-capital promotion. |
+
+The expected negative-control result is important: in a true random-walk
+environment, a large population should not discover a durable edge. If it does,
+assume leakage, overfitting, or a flawed simulator until proven otherwise.

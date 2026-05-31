@@ -8,3 +8,5 @@ Reusable operating skills for the Evolution Governor:
   preference contamination.
 - [evolution-decision-record](evolution-decision-record/SKILL.md): write a
   promotion, blocking, or escalation record.
+- [trading-evolution-governance](trading-evolution-governance/SKILL.md): review
+  trading-agent evolution without mistaking backtest winners for durable edge.

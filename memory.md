@@ -45,3 +45,16 @@ This is public memory for `agent_agentlas_self_evolving`.
   memory and preference signal becomes noisy, contradictory, and unsafe.
 - The repo defines an Evolution Governor rather than an agent that blindly
   rewrites itself.
+
+### 2026-05-31: Trading Agent Addendum
+
+- Trading-agent evolution should not optimize raw return alone.
+- A safer fitness function combines net risk-adjusted return, drawdown, costs,
+  market impact, turnover, overfit penalty, regime robustness, abstention
+  quality, and evidence quality.
+- In random-walk-like markets, running many agents and selecting the best
+  survivor is likely to select luck unless evaluation includes multiple-testing
+  penalties, walk-forward validation, null simulations, and paper-trading
+  quarantine.
+- The repo treats live-capital risk limits, leverage, broker permissions, and
+  capital allocation as human-review boundaries.

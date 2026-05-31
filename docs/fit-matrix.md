@@ -26,6 +26,8 @@ Use this matrix to decide whether self-evolution is likely to help.
 | One-off market thesis brainstorm | `DO_NOT_EVOLVE` | No stable loop and high risk of canonizing speculation |
 | Codebase maintenance agent with tests | `EVOLVE` | Repo conventions and test failures create reusable feedback |
 | Legal drafting agent across many clients | `HUMAN_REVIEW` | Cross-client confidentiality and legal risk require owner review |
+| Trading research agent in paper mode | `CONSTRAIN` | Recurring loop and measurable outcomes, but severe overfit and data-snooping risk |
+| Live-capital trading agent changing its own risk limits | `HUMAN_REVIEW` | Financial harm, leverage, permissions, and compliance require explicit owner approval |
 
 ## Hard Blockers
 
@@ -38,6 +40,8 @@ Return `DO_NOT_EVOLVE` or `HUMAN_REVIEW` if any blocker is present:
 - The proposed change expands permissions.
 - The workflow is high-stakes and lacks human review.
 - The evaluator is the same agent trying to prove that it improved.
+- For trading: the evaluation omits transaction costs, slippage, market impact,
+  drawdown, turnover, and number-of-trials accounting.
 
 ## Narrowing Moves
 
