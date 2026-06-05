@@ -5,11 +5,11 @@
 <h1 align="center">Agentlas Self Evolving</h1>
 
 <p align="center">
-  <a href="https://github.com/jeongmk522-netizen/Agentlas_public_repo">Lab Hub</a>
+  <a href="https://github.com/agentlas-ai">Lab Hub</a>
   |
   <a href="https://agentlas.cloud">agentlas.cloud</a>
   |
-  <a href="https://github.com/jeongmk522-netizen/agent_agentlas_self_evolving">agent_agentlas_self_evolving</a>
+  <a href="https://github.com/agentlas-ai/agent_agentlas_self_evolving">agent_agentlas_self_evolving</a>
 </p>
 
 <p align="center">
